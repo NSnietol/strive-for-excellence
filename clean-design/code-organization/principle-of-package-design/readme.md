@@ -1,6 +1,6 @@
 # Principle of package design
 
-## Cohesion principles
+# Cohesion principles
 
 _Cohesion_ : The degree to which the elements of a specific component belong together. Is about the way you can group code that contributes to a single task together.
 
@@ -24,7 +24,7 @@ Our units are going to be released together, they belong in one module.
 The CRP and the REP might seem similar, but there is a key difference. The CRP emphasizes reusing units from the same module together, while the REP emphasizes reusing the entire module.
 
 
-## Coupling principles
+# Coupling principles
 
 _Couping_ : is the measure of how closely connected two modules are.
 
