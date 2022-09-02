@@ -35,3 +35,14 @@ The rule of thumb is: Strive for low coupling and high cohesion. This rule serve
 “Allow no cycles in a component-dependency graph.” According to the ADP, you should strive to implement a directed acyclic graph, which helps you avoid cyclic dependencies.
 
 ![Ilustration](../../images/acyclic-dependency.png)
+
+### Stable Dependencies Principle
+
+The SDP says, “Depend in the direction of stability.”
+If you expect a module to be flexible and volatile, it is not a good idea to make a mostly stable module dependent on one that is not entirely stable. The reason is that the module that is not quite stable will be challenging to change
+
+
+![Ilustracion](../../images/stable-dependecies-principle.png)
+
+### Stable Abstraction Principle
+The SAP contains two keywords: stable and abstract. It states that a component should be as abstract as it is stable.
