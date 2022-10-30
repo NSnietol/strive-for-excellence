@@ -12,6 +12,8 @@
 The key goals of code review are to indentify any bug in the initial development and facilitate a maintainable codebase.
 
 
+
+
 1. Share Knowledge
 2. Increase collaboratin
 3. Enhance project quality 
@@ -72,3 +74,69 @@ Code quality and security are the * most crucial factors* and these can be done 
 Static code analysis : finds dead code, typos, vulnerabilites and other erros (e.g SonarQube)
 Dynamic code analysis : dinds performance, memory leaks, null pointer dereferencing.(e.g OWASP Zed Attack)
 
+
+### Code review quality control
+
+Consider colelcting and analyzing code review quality metrics to ensure that code reviews are helping and not harming your project. In a nutshell, this allow you to analyze the overall health of code review.
+
+
+### Types of code review quality metrics.
+
+* Review/ Inpection quality metrics
+*  Timeline metrics
+*  Process-related metrics
+
+
+### Review / inpsection quality metrics 
+
+These are related to *line of code* reviewed and the number of defects identified and missed.
+
+1. Lines of code (LOC)
+2. Code review rate : is LOC divided by inspections Hours 
+3. Identified defects per LOC 
+4. Defect rate : number of defects divided by inpections hours.
+5. Defect density : number of defects divided by kLOC.
+6. Missed defect count.
+
+
+### Timeline metrics 
+
+Timeline metrics are connected to lead time 
+
+### Code Review Best Practices 
+
+* Use automation tools
+* Use checklists 
+* Optimize the size and scope
+* Give feedback efectively
+
+
+### Checklists
+
+Is one of the most effective organization tool and provides a predetermined set of questions and rules your team will follow during the code review process.
+
+
+For instance:
+
+* Add the ticket number to the title of the pull request
+* Add description of the task to the PR
+* Clean commit history
+* Unit tests are green
+* Code quality gates are met
+* Code is documented
+
+
+It's recommeded to create separate checklists for _the code author_ and _the reviewer_.
+
+Make each item actionable and achievable, this helps to process standardization.
+
+
+
+
+## How to receive feedback
+
+* Be open to feedback
+* The reviewer is evaluating the code, not you.
+* Learn from mistakes
+* Ask for examples.
+* Asses ideas given during feedback
