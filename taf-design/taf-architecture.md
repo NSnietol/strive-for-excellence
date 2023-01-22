@@ -1,47 +1,35 @@
-# Things to do with archictecture
+# Things to consider when it comes to archictecture
 
 
-Define expections
-Choose tools ( runners/reports/loggers)
-Define sceope
-define approches 
-Configure test infrastructure
-Define processs
+
+- Define expections : what you're acheiving .
+- Choose tools : Elements to think of runners/reports/loggers.
+- Define scope : what is being included in the automation.
+- Define approches : scripts, play and record, data-driven or behave-driven.
+- Configure test infrastructure.
+- Define processs.
 
 
 ## Common TAF Layers.
-
-* Core layer :
   
-    Includes Configuration Layer,
+- **Core layer in automation projects**:
   
-    Utility ( static classes ) 
+    1) Includes Configuration Layer.
   
-    Runners ( parrallel, retry strategy , command line)
+    2) Utility ( static classes ) 
+  
+    3) Runners ( parrallel, retry strategy , command line)
     
-    Loggers ( Different levels )
+    4) Loggers ( Different levels )
 
-    Reporters ( User friendly message), Db connectors , Driver Set up.
-    Listeners 
+    5) Reporters ( User friendly message), Db connectors, Driver Set up, Listeners 
 
 
-* Business Layer
+- **Business Layer**
 
-    UI/API/Mobile Controlers, Services.
-    is a browser-oriented base test clcass that is reponsible for executing preparation and clean-up operations.
+  - **UI/API/Mobile Controlers**: base test class reponsible for executing preparation and clean-up operations.
 
-    Business logic layer: 
-        Steps
-        Business logic
-        BDD features implementation
-        Helper managers
+  - **Business logic layer**: Encompasses steps, business logic, BDD features implementation, Helper managers.
 
-* Tests level : Includes Test data.
-
-    Test data 
-    Tests 
-    Make tests simpler, user SoftAssertions, Name them wisely, keep the independecy of them.
-        Maintainability
-        Stability
-        Clarity
-        Reliability
+* **Tests level** : Includes Test data and tests complying with making tests simpler, user SoftAssertions, Name them wisely, keep the independecy of them.
+  
