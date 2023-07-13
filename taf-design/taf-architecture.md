@@ -1,16 +1,16 @@
-# Things to consider when it comes to archictecture
+# Things to consider when it comes to architecture
 
 
 
-- Define expections : what you're acheiving .
+- Define expectations : what you're achieving .
 - Choose tools : Elements to think of runners/reports/loggers.
 - Define scope : what is being included in the automation.
-- Define approches : scripts, play and record, data-driven or behave-driven.
+- Define approaches : scripts, play and record, data-driven or behave-driven.
 - Configure test infrastructure.
-- Define processs.
+- Define process.
 
 
-## Common TAF Layers.
+## Common TAF(Test Automation Framework) Layers.
   
 - **Core layer in automation projects**:
   
@@ -18,7 +18,7 @@
   
     2) Utility ( static classes ) 
   
-    3) Runners ( parrallel, retry strategy , command line)
+    3) Runners ( Parallelism, retry strategy , command line)
     
     4) Loggers ( Different levels )
 
@@ -27,9 +27,9 @@
 
 - **Business Layer**
 
-  - **UI/API/Mobile Controlers**: base test class reponsible for executing preparation and clean-up operations.
+  - **UI/API/Mobile Controllers**: base test class responsible for executing preparation and clean-up operations.
 
   - **Business logic layer**: Encompasses steps, business logic, BDD features implementation, Helper managers.
 
-* **Tests level** : Includes Test data and tests complying with making tests simpler, user SoftAssertions, Name them wisely, keep the independecy of them.
+* **Tests level** : Includes Test data and tests complying with making tests simpler, user SoftAssertions, Name them wisely, keep the independency of them.
   
