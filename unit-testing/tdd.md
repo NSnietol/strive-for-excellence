@@ -1,0 +1,2 @@
+## TDD
+TDD is a special case of test-first programming, which involves creating tests for production code before writing the code. With the test-first approach, you always begin with a test. Here devs adhere to: "Red, Green, Refactor" cycle by writting  low-level functional tests before production code, and then refactoring the code to make it more readable and maintainable.Plus Form an application's design as they write tests and production code in small iterations
