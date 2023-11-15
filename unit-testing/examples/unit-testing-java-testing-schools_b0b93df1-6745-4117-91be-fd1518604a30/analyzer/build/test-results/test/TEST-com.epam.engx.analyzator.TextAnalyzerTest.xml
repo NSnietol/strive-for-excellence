@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.engx.analyzator.TextAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-16T12:02:40" hostname="Nilsons-MacBook-Pro.local" time="0.027">
+  <properties/>
+  <testcase name="when_AnalyzingText_ReturnExpectedValues()" classname="com.epam.engx.analyzator.TextAnalyzerTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.engx.notificator.NotificationServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-24T13:15:53" hostname="Nilsons-MacBook-Pro.local" time="0.299">
+  <properties/>
+  <testcase name="when_ManyUserActionsAreEligibleForNotification_ShouldSentNotificationOnce()" classname="com.epam.engx.notificator.NotificationServiceTest" time="0.292"/>
+  <testcase name="when_OnlyOneUserActionIsEligibleForNotification_ShouldSentNotificationOnce()" classname="com.epam.engx.notificator.NotificationServiceTest" time="0.001"/>
+  <testcase name="when_ThereAreNotNotificators_ShouldNotSentNotification()" classname="com.epam.engx.notificator.NotificationServiceTest" time="0.0"/>
+  <testcase name="when_TheUserActionAreNotEligibleForNotification_ShouldNotSentNotifications()" classname="com.epam.engx.notificator.NotificationServiceTest" time="0.001"/>
+  <testcase name="when_TheNotificationIsNull_ThrowsNullPointer()" classname="com.epam.engx.notificator.NotificationServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
