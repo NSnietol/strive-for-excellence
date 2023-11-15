@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WordAnalyzer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">analyzer</a> &gt; <a href="index.source.html" class="el_package">com.epam.engx.analyzator.word</a> &gt; <span class="el_source">WordAnalyzer.java</span></div><h1>WordAnalyzer.java</h1><pre class="source lang-java linenums">package com.epam.engx.analyzator.word;
+
+import java.util.Arrays;
+import java.util.List;
+
+<span class="fc" id="L6">public class WordAnalyzer {</span>
+
+    public WordAnalyzerResults analyze(String text) {
+<span class="fc" id="L9">        final var words = Arrays.stream(text.split(&quot;\\P{L}+&quot;))</span>
+<span class="fc bfc" id="L10" title="All 2 branches covered.">                .filter(str -&gt; !str.isEmpty())</span>
+<span class="fc" id="L11">                .toList();</span>
+<span class="fc" id="L12">        final var wordCount = words.size();</span>
+<span class="fc" id="L13">        final var wordAvgLength = calculateWordAvgLength(words);</span>
+
+<span class="fc" id="L15">        return new WordAnalyzerResults(wordCount, wordAvgLength);</span>
+    }
+
+    private double calculateWordAvgLength(List&lt;String&gt; words) {
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (words.isEmpty()) {</span>
+<span class="fc" id="L20">            return 0.0;</span>
+        }
+<span class="fc" id="L22">        final var totalLength = words.stream()</span>
+<span class="fc" id="L23">                .map(String::length)</span>
+<span class="fc" id="L24">                .reduce(0, Integer::sum);</span>
+
+<span class="fc" id="L26">        return (double) totalLength / words.size();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
