@@ -1,0 +1,56 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.3'
+    id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+    id 'java'
+    id "org.sonarqube" version '3.4.0.2513'
+    id 'jacoco'
+    id "info.solidsoft.pitest" version '1.9.0'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    testImplementation 'org.mockito:mockito-core:4.8.0'
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
+}
+
+pitest {
+    targetTests = ['com.example.legacyshop.unittest.shop.*']
+    targetClasses = ['com.example.legacyshop.unittest.shop.*']
+    threads = 4
+    outputFormats = ['HTML']
+    timestampedReports = false
+    junit5PluginVersion = '1.0.0'
+    pitestVersion = '1.9.0'
+}
+
+project.tasks["sonarqube"].dependsOn "test"
+project.tasks["sonarqube"].dependsOn "jacocoTestReport"
+project.tasks["build"].dependsOn "pitest"
