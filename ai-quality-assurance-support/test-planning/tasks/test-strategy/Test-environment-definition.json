@@ -1,0 +1,76 @@
+{
+  "version": 4,
+  "history": [
+    {
+      "id": "607e4a8b-8a6d-43bb-af8a-53d06ddb13b6",
+      "name": "Test Environment Definition",
+      "messages": [
+        {
+          "role": "user",
+          "content": "\nYou are a QA Manager.\nYou are tasked to prepare the 'Environments' section of a test strategy document for a reference project.\nProvide an answer structured in a table with the following columns: Environment, Address(es), Purpose, and Data.\n\nThe reference project is a web application for a retail company.",
+          "model": {
+            "id": "gpt-4"
+          },
+          "settings": {
+            "prompt": "",
+            "temperature": 1,
+            "selectedAddons": []
+          }
+        },
+        {
+          "content": "| Environment | Address(es) | Purpose | Data |\n|-------------|-------------|---------|------|\n| Development Environment | dev.example.com | This is where the developers deploy their code for debugging and initial testing. | Non-sensitive data which is synthetically generated for testing purposes. |\n| Test Environment | test.example.com | This environment is primarily used by QA teams to perform various types of testing including functional, integration, and system testing. | Test data is a mix of anonymized production data and synthetically generated data which aims to cover different test scenarios. |\n| Staging Environment | stage.example.com | The staging environment mirrors production. This is where final user acceptance testing occurs before the actual deployment. | The data in this environment is an anonymized copy of production data. |\n| Production Environment | prod.example.com | The environment where the final, live version of the application resides. It is accessed by the end users. | Actual live data that users input into the application. |\n| Performance Environment | perf.example.com | This is used to perform performance testing including load, stress, endurance, and scalability tests. | The data is usually simulated but in huge volumes to appropriately mimic live use. |\n| Disaster Recovery Environment | dr.example.com | This environment is a replica of production and used in case of major incidents to ensure business continuity. | Regularly updated copies of real production data. |\n",
+          "model": {
+            "id": "gpt-4"
+          },
+          "settings": {
+            "prompt": "",
+            "temperature": 1,
+            "selectedAddons": []
+          },
+          "role": "assistant",
+          "responseId": "chatcmpl-8tamjtQdfsNb6bJ5v60YkzMamb7S5"
+        },
+        {
+          "role": "user",
+          "content": "Let's use that table and formulate a professional summary for executives. Briefly describe the objective of this part of the test strategy",
+          "model": {
+            "id": "gpt-4"
+          },
+          "settings": {
+            "prompt": "",
+            "temperature": 1,
+            "selectedAddons": []
+          }
+        },
+        {
+          "content": "The objective of the 'Environment' section of our test strategy is to define the various environments that will be utilized throughout the development and testing lifecycle of our web application project. Each environment serves a distinctive role and has been provisioned with project-specific data to ensure accurate and effective testing operations. \n\nOur strategy includes a Development environment for initial code debugging, a Test environment for conducting rigorous functional and integration testing, a Staging environment as a pre-production clone for final User Acceptance Testing (UAT), a Production environment for hosting the live application accessed by users, and a Performance environment for carrying out various performance evaluations. Additionally, we have a Disaster Recovery Environment, replicating our production for use during major incidents to maintain business continuity.\n\nEach environment will be furnished with applicable data - synthetically generated, anonymized copies of production data, or real production data as needed. This segregated and methodical approach aids in isolating application issues, thereby ensuring a robust, high-quality application output.",
+          "model": {
+            "id": "gpt-4"
+          },
+          "settings": {
+            "prompt": "",
+            "temperature": 1,
+            "selectedAddons": []
+          },
+          "role": "assistant",
+          "responseId": "chatcmpl-8tap2Gt0AGnYI9LHwyFd5nib0SQBL"
+        }
+      ],
+      "model": {
+        "id": "gpt-4"
+      },
+      "prompt": "",
+      "temperature": 1,
+      "replay": {
+        "isReplay": false,
+        "replayUserMessagesStack": [],
+        "activeReplayIndex": 0
+      },
+      "selectedAddons": [],
+      "lastActivityDate": 1708260275817,
+      "isMessageStreaming": false,
+      "isNameChanged": true
+    }
+  ],
+  "folders": []
+}

@@ -1,0 +1,51 @@
+{
+  "version": 4,
+  "history": [
+    {
+      "id": "462f844c-86b8-44ed-b5e0-26ae188df1c8",
+      "name": "Test Plan - Scope and Out of Scope",
+      "messages": [
+        {
+          "role": "user",
+          "content": "You are a QA Lead.\nYou are tasked to prepare the 'In Scope' and 'Out of Scope' sections of a test plan document for the \"Hotel for Your Pet\" application.\nProvide the answer in a tabular format for in scope section with columns: Test Type, Priority, Explanation of each type - application component.\nProvide the answer in a tabular format for out of scope section with columns: Test Type, Justification of exclusion.\n\nAdditional context of the application: is a premier mobile application that offers top-quality accommodation and personalized care for pets throughout Europe.",
+          "model": {
+            "id": "gpt-4"
+          },
+          "settings": {
+            "prompt": "",
+            "temperature": 1,
+            "selectedAddons": []
+          }
+        },
+        {
+          "content": "In Scope:\n\n| Test Type         | Priority |   Explanation of each type - application component |\n|------------------ |----------|--------------------------------------------------|\n| Functional Test   | High     | The functionality of booking services, checking availability, viewing services should be ensured. This test covers all the functions provided by the application. |\n| Integration Test  | High     | This is critical to guarantee the communication between different modules such as the booking system, payment portal, and user account management. |\n| Performance Test  | Medium   | This is done to ensure the application can handle peak load times, e.g., during holidays when demand is high. |\n| Security Test     | High     | It is very important to ensure the security of the user data and payment details. |\n| User Interface Test | Medium  | It checks the application's interactive aspects, like visual elements, navigation, and user input-output handling. |\n\nOut of Scope:\n\n| Test Type | Justification of exclusion |\n|---------  |----------------------------|\n| Hardware Compatibility Test | The application is platform-specific and designed for mobile devices. Testing on other hardware types would not provide significant value. |\n| Database Stress Test   | The database used by the application is managed by a third party service. Therefore, stress testing is beyond the control and scope of this project. |\n| Localization Test   | Currently the application is only available in English thus localization testing is not applicable. |\n| Manual Regression Testing | Due to the high number of minor iterations and the agile workflow, it's time-consuming and unproductive. Automation of regression testing is thus preferred. |\n",
+          "model": {
+            "id": "gpt-4"
+          },
+          "settings": {
+            "prompt": "",
+            "temperature": 1,
+            "selectedAddons": []
+          },
+          "role": "assistant",
+          "responseId": "chatcmpl-8tawdwzARrNEJwqmQRjg8mxDf9JpH"
+        }
+      ],
+      "model": {
+        "id": "gpt-4"
+      },
+      "prompt": "",
+      "temperature": 1,
+      "replay": {
+        "isReplay": false,
+        "replayUserMessagesStack": [],
+        "activeReplayIndex": 0
+      },
+      "selectedAddons": [],
+      "lastActivityDate": 1708260747095,
+      "isMessageStreaming": false,
+      "isNameChanged": true
+    }
+  ],
+  "folders": []
+}
