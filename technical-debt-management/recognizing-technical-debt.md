@@ -16,7 +16,7 @@ Using a single metric does not give you a full picture of how the project is goi
 ## Other Indicators
 Common red flags signaling that tech debt is about to reach the crisis stage include:
 
-Difficulties integrating new developers
-Knowledge transfer issues
-Issues with functional and non-functional requirements
-Regular complaints from your engineering team
+Difficulties integrating new developers : Antidote, create an onboarding plan.
+Knowledge transfer issues : Antidote, create a knowledge sharing process.
+Issues with functional and non-functional requirements : Antidote, analyze application metrics.
+Regular complaints from your engineering team : Antidote, create a feedback loop ( Conduct retrospective)
