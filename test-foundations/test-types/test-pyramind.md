@@ -1,0 +1,8 @@
+# Test Pyramid
+
+The test pyramid is a metaphor that tells us to group software tests into buckets of different granularity. It also gives an idea of how many tests there should be in each of these groups. Although the concept of the test pyramid has been around for a while, teams still struggle to put it into practice properly. The pyramid is divided into three layers:
+
+- **Unit Tests:** These tests are the foundation of the pyramid. They are the fastest and cheapest to run. They should be the most in number and should be run most frequently. They test individual components in isolation from the rest of the system. They are the most granular and the most specific tests. They are the first line of defense against bugs and regressions. They are written by developers for developers.
+- **Integration Tests:** These tests are in the middle of the pyramid. They test how different components work together. They are slower and more expensive to run than unit tests. They are less granular and less specific than unit tests. They are written by developers for developers.
+- **End-to-End Tests:** These tests are at the top of the pyramid. They test the whole system from end to end. They are the slowest and most expensive to run. They are the least in number and should be run least frequently. They are the least granular and the least specific tests. They are written by testers for testers.
+- **UI Tests:** These tests are at the top of the pyramid. They test the whole system from end to end. They are the slowest and most expensive to run. They are the least in number and should be run least frequently. They are the least granular and the least specific tests. They are written by testers for testers.
