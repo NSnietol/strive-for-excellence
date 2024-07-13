@@ -6,9 +6,9 @@ it's a web service that provides resizable compute capacity in the cloud. It's d
 
 ### EC2 Instance Types
 - **General Purpose** : Provides a balance of compute, memory, and networking resources.
-- **Compute Optimized** : Ideal for compute-bound applications that benefit from high-performance processors such as gaming servers, media transcoding, and high-performance computing.
-- **Memory Optimized** : Designed to deliver fast performance for workloads that process large data sets in memory such as real-time processing of unstructured data and high-performance databases.
-- **Storage Optimized** : Designed for workloads that require high, sequential read and write access to very large data sets on local storage such as data warehousing applications and high-frequency online transaction processing (OLTP) systems.
+- **Compute Optimized** : (HPC)Ideal for compute-bound applications that benefit from high-performance processors such as gaming servers, media transcoding, and high-performance computing.
+- **Memory Optimized** : (DB)Designed to deliver fast performance for workloads that process large data sets in memory such as real-time processing of unstructured data and high-performance databases.
+- **Storage Optimized** : (OLTP)Designed for workloads that require high, sequential read and write access to very large data sets on local storage such as data warehousing applications and high-frequency online transaction processing (OLTP) systems.
 
 ### Security Groups
 - A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.  It stablish if a traffic is allowed, by default all inbound traffic is denied and all outbound traffic is authorized.
