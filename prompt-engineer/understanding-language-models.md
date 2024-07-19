@@ -23,6 +23,9 @@ There are three common approaches to training ML programs:
 - Hallucinate information
 
 
+## Human in the loop approach
+
+A machine learning approach that involves human input at various stages of the machine learning process. Human oversight AI to ensure accuracy and fairness of the AI results.
 
 ## Prompts
 Its the object use to provide instructions and context for a specific task to achieve a desired outcome.
