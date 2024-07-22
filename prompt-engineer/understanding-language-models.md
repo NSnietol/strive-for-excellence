@@ -30,6 +30,10 @@ A machine learning approach that involves human input at various stages of the m
 ## Prompts
 Its the object use to provide instructions and context for a specific task to achieve a desired outcome.
 
+## Don't assume you will get the same quality output if you use the same prompt again in the future. 
+
+The quality of the output can vary depending on the prompt, the model, and the data it was trained on.
+
 ## Transformer Architecture
 A type of deep learning architecture that is based on the attention mechanism. It is used in natural language processing tasks such as language translation, text summarization, and text generation. Its components are :
 

@@ -11,6 +11,13 @@ Prompt Engineering is a new discipline that investigates how to develop and opti
 - Examples
 - Constraints : defines any limitations that LLM should work within generating the output.
 
+## Critically evaluating prompts
+- Is the output accurate?
+- Is the output unbiased?
+- Does the output include sufficient information?
+- Is the output relevant to my project or task?
+- Is the output consistent if I use the same prompt multiple times?
+
 ## Principal parameters
 Employing advanced prompt parameters enables prompt engineers to achieve, among others, several objectives:
 
