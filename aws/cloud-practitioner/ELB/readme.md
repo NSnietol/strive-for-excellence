@@ -22,3 +22,17 @@ Is a service that automatically distributes incoming application traffic across 
 - **Application Load Balancer (ALB)**: Best suited for load balancing of HTTP and HTTPS traffic(Layer 7). Operates at the application layer and supports path-based routing.
 - **Network Load Balancer (NLB)**: Best suited for load balancing of TCP traffic where extreme performance is required. Operates at the connection level (Layer 4).
 - **Gateway Load Balancer (GWLB)**: Best suited for load balancing of third-party virtual appliances. Operates at the connection level (Layer 4).
+
+## Auto Scaling
+Is a service that automatically adjusts the number of compute resources in a group based on demand or a predefined schedule.
+
+- **Scaling out**: Increasing the number of instances.
+- **Scaling in**: Decreasing the number of instances.
+- **Scaling up**: Increasing the size of the instances.
+- **Scaling down**: Decreasing the size of the instances.
+
+### Scaling strategies
+
+- **Manual Scaling**: You manually adjust the number of instances.
+- **Dynamic Scaling**: You set up policies to automatically adjust the number of instances based on demand.
+- **Predictive Scaling**: You use machine learning to predict demand and adjust the number of instances accordingly.
